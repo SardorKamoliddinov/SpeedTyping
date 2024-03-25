@@ -51,6 +51,8 @@ const SpeedTyping = () => {
         ref={textareaRef}
         onChange={countWords}
       ></textarea>
+      <h2 className="text-xl py-3">Time remaining: {time} seconds</h2>
+      {time === 0 && <h2 className="text-xl">Word Count: {wordCount}</h2>}
       <button
         className="m-5 px-7 py-2 bg-[#00b800] text-white"
         onClick={handleStartClick}
@@ -58,8 +60,6 @@ const SpeedTyping = () => {
       >
         Start
       </button>
-      <h2 className="text-xl py-3">Time remaining: {time} seconds</h2>
-      {time === 0 && <h2 className="text-xl">Word Count: {wordCount}</h2>}
     </div>
   );
 };

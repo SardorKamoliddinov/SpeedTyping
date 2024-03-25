@@ -7,6 +7,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Press Start 2P", system-ui;
+  color: #00b800;
 }
 a{
   color: inherit;
